@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Apoc LC Trial Revelations';
+    src: local('Apoc LC Trial Revelations Italic'), local('ApocLCTrial-RevelationsItalic'),
+        url('font/ApocLCTrial-RevelationsItalic.woff2') format('woff2'),
+        url('font/ApocLCTrial-RevelationsItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Apoc LC Trial Dark';
+    src: local('Apoc LC Trial Dark Italic'), local('ApocLCTrial-DarkItalic'),
+        url('font/ApocLCTrial-DarkItalic.woff2') format('woff2'),
+        url('font/ApocLCTrial-DarkItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
+  flex-direction: column;
+}
+
+.firstname {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 10%;
+
+  font-family: 'Apoc LC Trial Dark';
+  font-style: italic;
+  font-weight: 950;
+  font-size: 70px;
+  line-height: 115px;
+  white-space: nowrap;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 18px;
+  white-space: nowrap;
+
+  font-family: "Apoc LC Trial Revelations";
+  font-style: italic;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.lastname {
+  display: flex;
+
+  font-family: "Apoc LC Trial Dark";
+  font-style: italic;
+  font-weight: 950;
+  font-size: 100px;
+  line-height: 142px;
+}
+
+.introlast {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.lowertext {
+  display: flex;
+  width: 791px;
+  height: 115px;
+  left: 110px;
+  top: 887px;
+
+  font-family: "Apoc LC Trial Dark";
+  font-style: italic;
+  font-weight: 950;
+  font-size: 70px;
+  line-height: 115px;
+  white-space: nowrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section_title {
+    font-size: 100px;
+    color: #001f9a;
+}
+
+.titleProjects {
+    margin-top: 100px;
+}
+
+.latestProject {
+    display: flex;
+    justify-content: center;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* A Href Links */
+
+a {
+  color: #001f9a;
+}
+
+a:visited {
+  color: #001f9a;
+}
+
+a:hover {
+  color: #001f9a;
+}
+
+a:active {
+  color: #001f9a;
+}
+
+/* About Me */
+.WholeFlexContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+}
+
+.aboutmeTitle {
+  margin-top: 100px;
+  font-family: 'Apoc LC Trial Dark';
+  text-align: center;
+}
+
+.FlexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Hello {
+  margin-top: 200px;
+  font-family: 'Apoc LC Trial Dark';
+  color: #001f9a;
+  max-width: 800px;
+}
+
+.Hello > h1 {
+  font-size: 30px;
+}
+
+.Hello > p {
+  font-family: 'Apoc LC Trial Revelations';
+  font-size: 30px;
+}
+
+.Skills {
+  margin-top: 200px;
+  color: #001f9a;
+  font-family: 'Apoc LC Trial Dark';
+  max-width: 800px;
+}
+
+.Skills > h1 {
+  font-size: 30px;
+}
+
+.Skills > p {
+  font-family: 'Apoc LC Trial Revelations';
+  font-size: 30px;
+}
+
+/* Icons and Buttons */
+
+.link {
+  color: #001f9a;
+  padding: 0 0 0.3em 0;
+  position: relative;
+}
+
+.link:hover {
+  color: #001f9a;
+}
+
+.link::before {
+  content: "";
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: #001f9a;
+  transition: width 0.2s ease-in;
+}
+
+.link:hover::before,
+.link:focus::before {
+  width: 100%;
+}
+
+.link--icon {
+  color: #23283e;
+  font-size: 1.2rem;
+}
+
+/* Project Grid */
+.projects_grid {
+  max-width: 1500px;
+  min-width: 1500px;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  gap: 2em;
+}
+
+.projectsGrid {
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: auto;
+    align-items: center;
+}
+
+.project {
+  padding: 2em;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  transition: transform 0.2s linear;
+  min-width: 300px;
+  max-width: 300px;
+  font-family: "Poppins";
+}
+
+.project > h3 {
+    color: #001f9a;
+}
+
+.project:hover {
+  transform: translateY(-7px);
+}
+
+.project_description {
+  margin-top: 1em;
+}
+
+.project_stack {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.2em 0;
+}
+
+.project_stack-item {
+  margin: 0.5em;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #23283e;
+}
+
+.project .link--icon {
+  margin-left: 0.5em;
+}
+
+.footer {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.one {
+  background: #001f9a;
+  display: flex;
+  flex-direction: row;
+  color: #f1f4ff;
+}
+
+.projects {
+  background: #f1f4ff;
+  font-family: 'Apoc LC Trial Dark';
+}
+
+.three {
+  background: #f1f4ff;
+}
+
+.four {
+  background: #f1f4ff;
+}
